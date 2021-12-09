@@ -6,27 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steam Tables</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
 
-<form id="steam-table-form">
-    <div class="form-group">
-        <label for="whichTable">Are you looking for a Saturated or Superheated value?</label>
-        <select class="form-control" name="whichTable" id="whichTable">
-            <option value="" disabled>--</option>
-            <option value="saturated">Saturated</option>
-            <option value="superheated">Superheated</option>
-        </select>
-
-        <label for="given">What properties do you have?</label>
-        <select class="form-control" name="given" id="given">
-            <option value="" disabled>--</option>
-            <option value="pressure">Pressure</option>
-            <option value="temperature">Temperature</option>
-        </select>
+<div class="back">
+    <div class="div-center">
+        <div class="div-content">
+            <form id="steam-table-form">
+                <div class="form-group">
+                    <label for="whichTable">Are you looking for a Saturated or Superheated value?</label>
+                    <select class="form-control" name="whichTable" id="whichTable">
+                        <option value="" disabled>--</option>
+                        <option value="saturated">Saturated</option>
+                        <option value="superheated">Superheated</option>
+                    </select>
+            
+                    <label for="given">What properties do you have?</label>
+                    <select class="form-control" name="given" id="given">
+                        <option value="" disabled>--</option>
+                        <option value="pressure">Pressure</option>
+                        <option value="temperature">Temperature</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
-    <button type="submit" id="submit">Submit</button>
-</form>
+</div>
+
 
 <div id="appendResults">
     <!-- A table or something -->
